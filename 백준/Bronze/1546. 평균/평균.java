@@ -24,10 +24,12 @@ public class Main {
 
         double result = 0;
         for(int i = 0; i < arr.length; i++) {
-            result += (arr[i] / max) * 100.0;
+            result = result + ((arr[i] / max) * 100.0);
         }
         
-        System.out.println(result/arr.length);
+        result = result / arr.length;
+        
+        System.out.println(result);
 
         reader.close();
     }
